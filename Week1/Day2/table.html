@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" .">
+    <title> Table</title>
+</head>
+<body>
+
+    <h1>Course Schedule &amp; Room Allocations</h1>
+    <p>Multi-dimensional layout generated entirely via row spans, column spans, and native HTML attributes.</p>
+    
+    <!-- Table structural parameters explicitly configured via HTML attributes -->
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <thead>
+            <tr bgcolor="#f1f5f9">
+                <th>Cohort</th>
+                <th>Day</th>
+                <th>09:00 AM - 11:00 AM</th>
+                <th>11:00 AM - 01:00 PM</th>
+                <th>01:00 PM - 02:00 PM</th>
+                <th>02:00 PM - 04:00 PM</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Row 1 -->
+            <tr>
+                <td rowspan="2"><b>Cohort A (CS)</b></td>
+                <td>Monday</td>
+                <td>Data Structures (Room 101)</td>
+                <td>Discrete Math (Room 102)</td>
+                <!-- This LUNCH BREAK cell spans 4 rows down -->
+                <td rowspan="4" align="center" valign="middle" bgcolor="#fee2e2"><b>LUNCH BREAK</b></td>
+                <td>UI/UX Lab (Tech Lab 1)</td>
+            </tr>
+            <!-- Row 2 -->
+            <tr>
+                <td>Tuesday</td>
+                <!-- This workshop cell spans 2 columns wide across the time slots -->
+                <td colspan="2" align="center" bgcolor="#f0fdf4">Full-Stack Development Workshop (Auditorium)</td>
+                <td>Algorithms (Room 101)</td>
+            </tr>
+            <!-- Row 3 -->
+            <tr>
+                <td rowspan="2"><b>Cohort B (DA)</b></td>
+                <td>Monday</td>
+                <td>Applied Statistics (Room 201)</td>
+                <td>Python for Data (Room 202)</td>
+                <td>Machine Learning (Room 201)</td>
+            </tr>
+            <!-- Row 4 -->
+            <tr>
+                <td>Tuesday</td>
+                <!-- This workshop cell spans 2 columns wide across the time slots -->
+                <td colspan="2" align="center" bgcolor="#f0fdf4">Full-Stack Development Workshop (Auditorium)</td>
+                <td>Database Management (Room 202)</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

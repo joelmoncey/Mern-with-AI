@@ -1,0 +1,150 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+    min-height: 120vh;
+    padding-bottom: 100px;
+}
+
+.sticky-navbar {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    z-index: 100; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.navbar-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.fab-button {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 60px;
+    height: 60px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    z-index: 200; 
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.fab-button:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 48px auto;
+    padding: 0 16px;
+}
+
+.section-title {
+    margin-bottom: 32px;
+    font-size: 28px;
+    border-left: 4px solid #2563eb;
+    padding-left: 8px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.course-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    
+    position: relative; 
+    overflow: hidden;
+    display: block;
+}
+
+
+.badge-overlay {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: #ef4444; 
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.badge-overlay.status-new {
+    background-color: #10b981; 
+}
+
+.card-category {
+    display: inline-block; 
+    background-color: #e0f2fe;
+    color: #0369a1;
+    font-size: 12.8px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+
+.card-description {
+    color: #64748b;
+    font-size: 15.2px;
+}

@@ -1,0 +1,138 @@
+
+* {
+    
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  
+    font-size: 16px; 
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #334155; 
+    background-color: #f8fafc;
+    padding: 2rem 1rem;
+}
+
+
+h1, h2, h3 {
+    color: #0f172a; 
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: -0.05em;
+}
+
+h2 {
+    font-size: 1.75rem;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: #2563eb; 
+}
+
+p {
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #e2e8f0;
+    margin: 2.5rem 0;
+}
+
+
+#biography, #projects, #quick-facts {
+   
+    max-width: 800px;
+    margin: 0 auto 2.5rem auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); 
+}
+
+
+#biography img {
+    display: block;
+    width: 150px; 
+    height: 150px;
+    background-color: #cbd5e1; 
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+
+header {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+
+header > p {
+    font-size: 1.2rem;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0.75rem;
+    background-color: #1e293b; 
+    border-radius: 6px;
+}
+
+
+nav ul li a {
+    color: #f8fafc;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+
+nav ul li a:hover {
+    background-color: #334155;
+}
+
+
+#quick-facts ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+#quick-facts ul li {
+    margin-bottom: 0.75rem;
+}
+
+footer {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.875rem;
+    padding: 1rem 0;
+}
