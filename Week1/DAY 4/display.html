@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" >
-    <title>Display and Positioning</title>
-    
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAY 4</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-  
-    <nav class="sticky-navbar">
-        <div class="navbar-brand">DevPortal</div>
-        <ul class="navbar-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Dashboard</a></li>
-        </ul>
-    </nav>
+  <div class="navbar">
+    <div class="navcontent">
+      <div class="navname">MySite</div>
+      <div class="navlink">
+        <a href="#">Home</a>
+        <a href="#">Cards</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
 
-   
-    <button class="fab-button" title="Create New Ticket">+</button>
+  <div class="content">
+    
+    <div class="card">
+      <div class="badge">New</div>
+      <div class="box"></div>
+      <div class="card-body">
+        <h3>Hello</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta culpa voluptatibus debitis sed, beatae eligendi, facilis, voluptas corrupti aspernatur magni quibusdam! Quo dolor, quos quia, soluta totam maiores nostrum iusto beatae molestias vero atque consectetur facere repellendus fugiat in doloribus. Nostrum doloremque amet similique reiciendis corporis sunt facilis illum quos!</p>
+      </div>
+    </div>
 
-    <main class="container">
-        <h2 class="section-title">Available Curriculums</h2>
-        
-        <div class="card-grid">
-           
-            <div class="course-card">
-                <span class="badge-overlay">Hot</span>
-                <span class="card-category">Engineering</span>
-                <h3 class="card-title">COMPUTER SCIENCE</h3>
-                <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, vero non consectetur eum et error earum distinctio, qui eveniet ipsa voluptatibus voluptate, corporis placeat sit delectus quasi obcaecati. Eos, minima.</p>
-            </div>
+    <div class="card">
+      <div class="badge" style="background: green;">Sale</div>
+      <div class="box"></div>
+      <div class="card-body">
+        <h3>HI</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, libero, impedit at ex vitae architecto amet doloremque sapiente neque tenetur facere inventore minus in perferendis non aut enim quia consequatur ad magnam nulla officia! Reprehenderit architecto, provident accusantium saepe, harum quis et ipsa aspernatur corrupti sapiente quaerat repellat itaque autem?</p>
+      </div>
+    </div>
 
-            <div class="course-card">
-                <span class="badge-overlay status-new">New</span>
-                <span class="card-category">Data Science</span>
-                <h3 class="card-title">Machine Learning</h3>
-                <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quis accusantium eum delectus culpa repellat, maiores voluptate aspernatur eius itaque corporis dicta eaque nulla nam saepe possimus modi dignissimos dolore.</p>
-            </div>
+    <div class="card">
+        <div class="badge" style="background: violet;">Hello</div>
+      <div class="box"></div>
+      <div class="card-body">
+        <h3>HEY</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quis in rem corporis commodi enim repellendus ea, vitae rerum! Laudantium corporis aspernatur adipisci dicta nihil, velit consequatur excepturi eveniet iusto omnis tempora? Deleniti, impedit aperiam pariatur exercitationem saepe quo itaque temporibus debitis laudantium! Et, iste adipisci sapiente hic officiis impedit?</p>
+      </div>
+    </div>
 
-        </div>
+  </div>
 
-       
-      
-    </main>
+  <button class="action-button">+</button>
 
 </body>
 </html>
